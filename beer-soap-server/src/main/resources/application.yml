@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /beer-server
+spring:
+  profiles:
+    active: '@spring.profiles.active@'
+---
+spring:
+  profiles: dev
+  application:
+    name: beer-server
+---
+spring:
+  profiles: qa
+  application:
+    name: beer-server
